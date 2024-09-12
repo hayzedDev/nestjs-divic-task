@@ -4,7 +4,7 @@ This project is a **NestJS** application that uses **Prisma** as the ORM, **Post
 
 The App has 4 mutations (register, login, biometricLogin and addBiometric) and a query (health).
 
-1. The register mutation is the implementation of a GraphQL mutation for user registration
+1. The "register" mutation is the implementation of a GraphQL mutation for user registration
 
 2. The "login" mutation is the implementation of a GraphQL mutation for user login using email and password
 
@@ -21,7 +21,7 @@ The App has 4 mutations (register, login, biometricLogin and addBiometric) and a
 First, clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/hayzedDev/nestjs-divic-task.git
 cd nestjs-vidic-task
 ```
 

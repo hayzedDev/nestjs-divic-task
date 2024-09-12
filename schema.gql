@@ -1,0 +1,69 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+directive @upper on FIELD_DEFINITION
+
+type User {
+  """Unique Identifier of a User"""
+  id: ID!
+
+  """Email of the User"""
+  email: String!
+
+  """Biometric Key"""
+  biometricKey: String
+
+  """Date User was Created"""
+  createdAt: DateTime!
+
+  """Last Date User was Updated"""
+  updatedAt: DateTime!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type GenericResponse {
+  """A Success message"""
+  message: String!
+}
+
+type LoginResponse {
+  """JWT Token issue to the user for protected requests"""
+  token: String!
+}
+
+type Query {
+  sayHello: String!
+}
+
+type Mutation {
+  register(createUserInput: RegisterUserInput!): User!
+  login(input: LoginInput!): LoginResponse!
+  biometricLogin(input: LoginBiometricInput!): LoginResponse!
+  addBiometric(input: LoginBiometricInput!): GenericResponse!
+}
+
+input RegisterUserInput {
+  """Email address of the Registering User"""
+  email: String!
+
+  """Password of the Registering User"""
+  password: String!
+}
+
+input LoginInput {
+  """Email address of User logging in"""
+  email: String!
+
+  """Password of User Logging in"""
+  password: String!
+}
+
+input LoginBiometricInput {
+  """Biometric of User logging in"""
+  biometricKey: String!
+}

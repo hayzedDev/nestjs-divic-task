@@ -38,6 +38,19 @@ Ensure that you have **Docker** and **Docker Compose** installed on your machine
 
 ### Stage 1: Initialize the Database
 
+Before you begin,
+
+1. **Create a .env File:**
+
+   Create a `.env` file and populate it with the environment variables specified in the `.env.example` file:
+
+   ```bash
+   touch .env
+   ```
+   Copy the variables from `.env.example` to `.env` and modify them according to your configuration.
+
+
+
 To initialize the PostgreSQL database using Docker Compose, run:
 
 ```bash
@@ -79,17 +92,7 @@ You can either run the app using **Docker Compose** or **Yarn**. Below are the s
    yarn run test
    ```
 
-4. **Create a .env File:**
-
-   Create a `.env` file and populate it with the environment variables specified in the `.env.example` file:
-
-   ```bash
-   touch .env
-   ```
-
-   Copy the variables from `.env.example` to `.env` and modify them according to your configuration.
-
-5. **Start the App:**
+4. **Start the App:**
 
    To start the application, run:
 

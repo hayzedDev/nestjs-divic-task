@@ -36,3 +36,6 @@ lerna-debug.log*
 
 # envs
 .env
+
+# zip
+nestjs-divic-app.zip

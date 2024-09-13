@@ -26,31 +26,15 @@ describe('UserResolver', () => {
             register: jest.fn(),
           },
         },
-        // {
-        //   provide: AuthService,
-        //   useValue: {
-        //     validateUser: jest.fn(),
-        //     signJwtToken: jest.fn(),
-        //   },
-        // },
       ],
     }).compile();
 
     resolver = module.get<UsersResolver>(UsersResolver);
     usersService = module.get<UsersService>(UsersService);
-    // authService = module.get<AuthService>(AuthService);
   });
 
   // Test: Missing email or password in registration
   it('should throw BadRequestException if email or password is missing during registration', async () => {
-    // const email = 'test@example.com';
-    // const password = 'testPassword';
-    // const hashedPassword = 'hashedPassword';
-    // const mockUser = {
-    //   email,
-    //   password: hashedPassword,
-    // };
-
     // create a "prisma.user.register" model mock function
     usersService.register = jest
       .fn()

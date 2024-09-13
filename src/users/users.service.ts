@@ -22,6 +22,7 @@ export class UsersService {
       where: { email: registerUserInput.email },
     });
 
+    // Check if there is a user with the email on the db
     if (existingUser)
       throw new ConflictException('User with Email Already Exist!');
 
@@ -69,7 +70,7 @@ export class UsersService {
     return { message: 'Biometric Added Successfully!' };
   }
 
-  // Helper function to hash a variable (password and biometric in this case)
+  // Helper function to hash the password
   private async hashVariable(variable: string): Promise<string> {
     const saltRounds = 10;
     return await bcrypt.hash(variable, saltRounds);

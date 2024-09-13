@@ -1,8 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { BadRequestException, UnauthorizedException } from '@nestjs/common';
+import { BadRequestException } from '@nestjs/common';
 import { UsersResolver } from './users.resolver';
 import { UsersService } from './users.service';
-import { User } from './entities/user.entity';
 import { PrismaService } from 'prisma/prisma.client';
 import { JwtService } from 'src/common/services';
 import { ConfigModule } from '@nestjs/config';
@@ -10,7 +9,6 @@ import { ConfigModule } from '@nestjs/config';
 describe('UserResolver', () => {
   let resolver: UsersResolver;
   let usersService: Partial<UsersService>;
-  // let authService: Partial<AuthService>;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({

@@ -18,7 +18,7 @@ The App has 4 mutations (register, login, biometricLogin and addBiometric) and a
 
 ### 1. Clone the Repository
 
-First, clone the repository:
+First, clone the repository, and cd into the root of the app:
 
 ```bash
 git clone https://github.com/hayzedDev/nestjs-divic-task.git
@@ -27,7 +27,7 @@ cd nestjs-vidic-task
 
 ### 2. Prerequisites
 
-Ensure that you have **Docker** and **Docker Compose** installed on your machine.
+Ensure that you have **Docker** and **Docker Compose** installed on your machine. You can click on the urls below on how to install both.
 
 - [Install Docker](https://docs.docker.com/get-docker/)
 - [Install Docker Compose](https://docs.docker.com/compose/install/)
@@ -172,7 +172,7 @@ You can either run the app using **Docker Compose** or **Yarn**. Below are the s
 Alternatively, the app is running live, and you can access the **GraphQL Playground** at:
 
 ```
-https://example.com
+https://nestjs-divic-task.mooo.com/graphql
 ```
 
 Use this URL to interact with the GraphQL API, send queries, and test the endpoints.

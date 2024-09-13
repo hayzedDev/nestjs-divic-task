@@ -32,12 +32,12 @@ type GenericResponse {
 }
 
 type LoginResponse {
-  """JWT Token issue to the user for protected requests"""
+  """JWT Token issued to the user for making protected requests"""
   token: String!
 }
 
 type Query {
-  sayHello: String!
+  health: String!
 }
 
 type Mutation {

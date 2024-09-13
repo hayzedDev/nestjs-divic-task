@@ -22,7 +22,7 @@ First, clone the repository, and cd into the root of the app:
 
 ```bash
 git clone https://github.com/hayzedDev/nestjs-divic-task.git
-cd nestjs-vidic-task
+cd nestjs-divic-task
 ```
 
 ### 2. Prerequisites

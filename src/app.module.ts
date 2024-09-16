@@ -7,19 +7,6 @@ import { DirectiveLocation, GraphQLDirective } from 'graphql';
 import { upperDirectiveTransformer } from './common/directives/upper-case.directive';
 import { ConfigModule } from '@nestjs/config';
 
-// @Module({
-//   imports: [
-//     ConfigModule.forRoot({ isGlobal: true }), // Global configuration
-//     GraphQLModule.forRoot<ApolloDriverConfig>({
-//       driver: ApolloDriver,
-//       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
-//     }),
-
-//     UsersModule,
-//   ],
-//   providers: [PrismaService],
-// })
-// export class AppModule {}
 
 @Module({
   imports: [

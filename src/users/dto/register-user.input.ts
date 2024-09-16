@@ -6,7 +6,7 @@ import { IsEmail,  IsString, Matches } from 'class-validator';
 export class RegisterUserInput {
   @Field(() => String, { description: 'Email address of the Registering User' })
   @IsEmail({}, { message: 'Please Provide a Valid Email' })
-  @Transform(({ value }: {value: string}) => value?.toLowerCase().trim())
+  @Transform(({ value }: { value: string }) => value?.toLowerCase().trim())
   email: string;
 
   @Field(() => String, { description: 'Password of the Registering User' })
